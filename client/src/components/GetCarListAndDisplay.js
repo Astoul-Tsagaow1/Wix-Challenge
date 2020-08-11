@@ -8,7 +8,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import MenuItem from "@material-ui/core/MenuItem";
 import Select from "@material-ui/core/Select";
 import { Typography } from "@material-ui/core";
-import LinearProgress from "@material-ui/core/LinearProgress";
+import CircularProgress from '@material-ui/core/CircularProgress';
 
 const Styles = makeStyles(theme => ({
   formControl: {
@@ -17,11 +17,10 @@ const Styles = makeStyles(theme => ({
     minHeight: 100
   },
   root: {
-    width: "100%",
-    "& > * + *": {
-      marginTop: theme.spacing(1)
-    }
-   
+    display: 'flex',
+    '& > * + *': {
+      marginLeft: theme.spacing(2),
+    },
   }
 }));
 function GetCarsList() {
@@ -50,8 +49,7 @@ function GetCarsList() {
   if (cars.length === 0) {
     return (
       <div className={classes.root}>
-        <LinearProgress />
-        <LinearProgress color="secondary" />
+      <CircularProgress />
       </div>
     );
   }
@@ -94,8 +92,8 @@ function GetCarsList() {
     return;
   };
   const selecteOptionsMaker = arrayofYaerOrcarNames => {
-    return arrayofYaerOrcarNames.map(options => {
-      return <MenuItem value={`${options}`}>{options}</MenuItem>;
+    return arrayofYaerOrcarNames.map((options,i) => {
+      return <MenuItem key={i} value={`${options}`}>{options}</MenuItem>;
     });
   };
   //to do filter by model
@@ -119,7 +117,6 @@ function GetCarsList() {
           placeholder="between 2015 -2017"
           type="number"
           onChange={hendelYearChange}
-          size="Normal"
           label="Year"
         />
       </FormControl>

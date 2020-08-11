@@ -1,5 +1,5 @@
 import React from "react";
-import GetCarsList from './components/GetCarsListAnd';
+import GetCarsList from './components/GetCarListAndDisplay';
 import { Typography } from '@material-ui/core';
 
 function App() {

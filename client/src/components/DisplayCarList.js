@@ -22,12 +22,7 @@ const Styles = makeStyles({
 });
 
 export default function displayCArList(props) {
-  
-  
-  
   const classes = Styles();
-
-console.log(props.ListOfCars);
     const getCarList = arrayOfcars  => {
         return arrayOfcars.map((car,i) => {
           return (  <Card key={i}className={classes.root} >
