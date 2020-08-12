@@ -17,5 +17,6 @@
     "@material-ui/styles": "^4.10.0",
     "@material-ui/system": "^4.9.14",
     "concurrently": "^5.2.0"
-  }
+  },
+  "devDependencies": {}
 }

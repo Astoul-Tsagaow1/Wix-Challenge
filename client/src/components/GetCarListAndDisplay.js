@@ -60,7 +60,7 @@ function GetCarsList() {
       return;
       //show all cars to users
     }
-
+   
     const afterfilter = cars.filter(cars => {
       if (cars.make === event.target.value) {
         return cars;
@@ -75,7 +75,7 @@ function GetCarsList() {
   const hendelYearChange = event => {
     if (arrayAfterFilterHolder === null) {
       const afterYearFilter = cars.filter(carsYear => {
-        if (carsYear.year === Number(event.target.value)) {
+        if (Number(carsYear.year) === Number(event.target.value)) {
           return carsYear;
         }
       });
@@ -83,7 +83,7 @@ function GetCarsList() {
       return;
     }
     const afterFilter = arrayAfterFilterHolder.filter(data => {
-      if (data.year === Number(event.target.value)) {
+      if (Number(data.year) === Number(event.target.value)) {
         return data;
       }
     });
@@ -107,14 +107,14 @@ function GetCarsList() {
           id="demo-simple-select"
           onChange={filterByCarsNamesChange}
         >
-          <MenuItem value="All">All cars</MenuItem>
+          <MenuItem  value="All">All cars</MenuItem>
           {selecteOptionsMaker(carsSelectOptions)}
         </Select>
       </FormControl>
       <FormControl className={classes.formControl}>
         <TextField
           id="standard-basic"
-          placeholder="between 2015 -2017"
+          placeholder="between 2010-2020"
           type="number"
           onChange={hendelYearChange}
           label="Year"

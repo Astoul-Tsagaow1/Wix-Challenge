@@ -16,13 +16,15 @@ const Styles = makeStyles({
     fontSize: 40,
   },
   media: {
-    height: 150,
+    height: 200,
   }, 
 
 });
 
 export default function displayCArList(props) {
   const classes = Styles();
+
+  console.log(props.ListOfCars);
     const getCarList = arrayOfcars  => {
         return arrayOfcars.map((car,i) => {
           return (  <Card key={i}className={classes.root} >

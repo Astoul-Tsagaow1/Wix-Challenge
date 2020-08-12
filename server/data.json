@@ -1,0 +1,802 @@
+[
+    {
+        "id": 1,
+        "price": "14998",
+        "make": "Toyota",
+        "img_url": "https://img2.carmax.com/img/vehicles/19189342/1/385.jpg",
+        "year": 2011,
+        "model": "Highlander",
+        "bodyType": "4D Sport Utility",
+        "color": "Black",
+        "vehicleInteriorColor": "Tan",
+        "fuelType": "Unleaded Regular"
+    },
+    {
+        "id": 2,
+        "price": "13998",
+        "make": "Honda",
+        "img_url": "https://img2.carmax.com/img/vehicles/19189409/1/385.jpg",
+        "year": 2012,
+        "model": "CR-V",
+        "bodyType": "4D Sport Utility",
+        "color": "White",
+        "vehicleInteriorColor": "Tan",
+        "fuelType": "Unleaded Regular"
+    },
+    {
+        "id": 3,
+        "price": "16998",
+        "make": "Toyota",
+        "img_url": "https://img2.carmax.com/img/vehicles/18624643/1/385.jpg",
+        "year": 2015,
+        "model": "RAV4",
+        "bodyType": "4D Sport Utility",
+        "color": "Silver",
+        "vehicleInteriorColor": "Black",
+        "fuelType": "Unleaded Regular"
+    },
+    {
+        "id": 4,
+        "price": "16998",
+        "make": "Chevrolet",
+        "img_url": "https://img2.carmax.com/img/vehicles/19336784/1/385.jpg",
+        "year": 2014,
+        "model": "Traverse",
+        "bodyType": "4D Sport Utility",
+        "color": "Red",
+        "vehicleInteriorColor": "Black",
+        "fuelType": "Unleaded Regular"
+    },
+    {
+        "id": 5,
+        "price": "10998",
+        "make": "Toyota",
+        "img_url": "https://img2.carmax.com/img/vehicles/19189682/1/385.jpg",
+        "year": 2013,
+        "model": "Corolla",
+        "bodyType": "4D Sedan",
+        "color": "Gray",
+        "vehicleInteriorColor": "Black",
+        "fuelType": "Unleaded Regular"
+    },
+    {
+        "id": 6,
+        "price": "10998",
+        "make": "Jeep",
+        "img_url": "https://img2.carmax.com/img/vehicles/18624530/1/385.jpg",
+        "year": 2012,
+        "model": "Compass",
+        "bodyType": "4D Sport Utility",
+        "color": "Gray",
+        "vehicleInteriorColor": "Black",
+        "fuelType": "Unleaded Regular"
+    },
+    {
+        "id": 7,
+        "price": "9998",
+        "make": "Toyota",
+        "img_url": "https://img2.carmax.com/img/vehicles/18487154/1/385.jpg",
+        "year": 2010,
+        "model": "Prius",
+        "bodyType": "4D Hatchback",
+        "color": "White",
+        "vehicleInteriorColor": "Gray",
+        "fuelType": "Unleaded Regular"
+    },
+    {
+        "id": 8,
+        "price": "13998",
+        "make": "Ford",
+        "img_url": "https://img2.carmax.com/img/vehicles/19052259/1/385.jpg",
+        "year": 2013,
+        "model": "Edge",
+        "bodyType": "4D Sport Utility",
+        "color": "White",
+        "vehicleInteriorColor": "Black",
+        "fuelType": "Unleaded Regular"
+    },
+    {
+        "id": 9,
+        "price": "13998",
+        "make": "Honda",
+        "img_url": "https://img2.carmax.com/img/vehicles/19006347/1/385.jpg",
+        "year": 2012,
+        "model": "Civic",
+        "bodyType": "4D Sedan",
+        "color": "Gray",
+        "vehicleInteriorColor": "Gray",
+        "fuelType": "Unleaded Premium"
+    },
+    {
+        "id": 10,
+        "price": "29998",
+        "make": "Toyota",
+        "img_url": "https://img2.carmax.com/img/vehicles/19007341/1/385.jpg",
+        "year": 2014,
+        "model": "Tundra",
+        "bodyType": "4D Crew Cab",
+        "color": "White",
+        "vehicleInteriorColor": "Tan",
+        "fuelType": "Unleaded Regular"
+    },
+    {
+        "id": 11,
+        "price": "19998",
+        "make": "Dodge",
+        "img_url": "https://img2.carmax.com/img/vehicles/19173551/1/385.jpg",
+        "year": 2019,
+        "model": "Journey",
+        "bodyType": "4D Sport Utility",
+        "color": "Gray",
+        "vehicleInteriorColor": "Black",
+        "fuelType": ""
+    },
+    {
+        "id": 12,
+        "price": "9998",
+        "make": "Chevrolet",
+        "img_url": "https://img2.carmax.com/img/vehicles/18624545/1/385.jpg",
+        "year": 2012,
+        "model": "Cruze",
+        "bodyType": "4D Sedan",
+        "color": "Black",
+        "vehicleInteriorColor": "Black",
+        "fuelType": "Unleaded Regular"
+    },
+    {
+        "id": 13,
+        "price": "8599",
+        "make": "Ford",
+        "img_url": "https://img2.carmax.com/img/vehicles/19190056/1/385.jpg",
+        "year": 2012,
+        "model": "Focus",
+        "bodyType": "4D Hatchback",
+        "color": "Red",
+        "vehicleInteriorColor": "Black",
+        "fuelType": "Unleaded Regular"
+    },
+    {
+        "id": 14,
+        "price": "11599",
+        "make": "Honda",
+        "img_url": "https://img2.carmax.com/img/vehicles/18970452/1/385.jpg",
+        "year": 2013,
+        "model": "Civic",
+        "bodyType": "4D Sedan",
+        "color": "Gray",
+        "vehicleInteriorColor": "Tan",
+        "fuelType": "Unleaded Regular"
+    },
+    {
+        "id": 15,
+        "price": "10998",
+        "make": "Chevrolet",
+        "img_url": "https://img2.carmax.com/img/vehicles/19189410/1/385.jpg",
+        "year": 2012,
+        "model": "Cruze",
+        "bodyType": "4D Sedan",
+        "color": "Red",
+        "vehicleInteriorColor": "Red",
+        "fuelType": "Unleaded Regular"
+    },
+    {
+        "id": 16,
+        "price": "11599",
+        "make": "Chevrolet",
+        "img_url": "https://img2.carmax.com/img/vehicles/16873845/1/385.jpg",
+        "year": 2012,
+        "model": "Cruze",
+        "bodyType": "4D Sedan",
+        "color": "Black",
+        "vehicleInteriorColor": "Black",
+        "fuelType": "Unleaded Regular"
+    },
+    {
+        "id": 17,
+        "price": "9998",
+        "make": "Mercury",
+        "img_url": "https://img2.carmax.com/img/vehicles/16873931/1/385.jpg",
+        "year": 2010,
+        "model": "Milan",
+        "bodyType": "4D Sedan",
+        "color": "Blue",
+        "vehicleInteriorColor": "Black",
+        "fuelType": "Unleaded Regular"
+    },
+    {
+        "id": 18,
+        "price": "40998",
+        "make": "Toyota",
+        "img_url": "https://img2.carmax.com/img/vehicles/19190026/1/385.jpg",
+        "year":2018,
+        "model": "Tundra",
+        "bodyType": "4D Crew Cab",
+        "color": "Blue",
+        "vehicleInteriorColor": "Brown",
+        "fuelType": "Unleaded Regular"
+    },
+    {
+        "id": 19,
+        "price": "8599",
+        "make": "Hyundai",
+        "img_url": "https://img2.carmax.com/img/vehicles/19190140/1/385.jpg",
+        "year": 2009,
+        "model": "Sonata",
+        "bodyType": "4D Sedan",
+        "color": "Brown",
+        "vehicleInteriorColor": "Tan",
+        "fuelType": "Unleaded Regular"
+    },
+    {
+        "id": 20,
+        "price": "16998",
+        "make": "Toyota",
+        "img_url": "https://img2.carmax.com/img/vehicles/19190563/1/385.jpg",
+        "year": 2020,
+        "model": "Yaris",
+        "bodyType": "4D Sedan",
+        "color": "Silver",
+        "vehicleInteriorColor": "Gray",
+        "fuelType": ""
+    },
+    {
+        "id": 21,
+        "price": "19998",
+        "make": "Toyota",
+        "img_url": "https://img2.carmax.com/img/vehicles/19190246/1/385.jpg",
+        "year": 2016,
+        "model": "RAV4",
+        "bodyType": "4D Sport Utility",
+        "color": "Purple",
+        "vehicleInteriorColor": "Black",
+        "fuelType": "Unleaded Regular"
+    },
+    {
+        "id": 22,
+        "price": "11998",
+        "make": "Chevrolet",
+        "img_url": "https://img2.carmax.com/img/vehicles/18624726/1/385.jpg",
+        "year": 2013,
+        "model": "Malibu",
+        "bodyType": "4D Sedan",
+        "color": "White",
+        "vehicleInteriorColor": "Tan",
+        "fuelType": "Unleaded Regular"
+    },
+    {
+        "id": 23,
+        "price": "16998",
+        "make": "Toyota",
+        "img_url": "https://img2.carmax.com/img/vehicles/19190344/1/385.jpg",
+        "year": 2019,
+        "model": "Corolla",
+        "bodyType": "4D Sedan",
+        "color": "Black",
+        "vehicleInteriorColor": "Black",
+        "fuelType": "Unleaded Regular"
+    },
+    {
+        "id": 24,
+        "price": "22998",
+        "make": "Ford",
+        "img_url": "https://img2.carmax.com/img/vehicles/19189865/1/385.jpg",
+        "year": 2016,
+        "model": "Edge",
+        "bodyType": "4D Sport Utility",
+        "color": "Blue",
+        "vehicleInteriorColor": "Black",
+        "fuelType": "Unleaded Regular"
+    },{
+        "make": "Mazda",
+        "model": "3",
+        "img_url": "https://www.cartube.co.il/images/stories/mazda/mazda-3/2017/mazda3_hatchback_98-970px.jpg",
+        "year": "2017",
+        "price": "20000",
+        "condition": "Used"
+    },
+    {
+        "make": "Mazda",
+        "model": "3",
+        "img_url": "https://www.kvishim.co.il/wp-content/uploads/images-002/20170312_170624.jpg",
+        "year": "2019",
+        "price": "30000",
+        "condition": "Used"
+    },
+    {
+        "make": "Mazda",
+        "model": "3",
+        "img_url": "https://www.gear.co.il/Content/MediaItems/Catalog/Mazda/%D7%9E%D7%90%D7%96%D7%93%D7%94-3-%D7%A1%D7%93%D7%90%D7%9F-2017/900/%D7%9E%D7%90%D7%96%D7%93%D7%94-3-%D7%A1%D7%93%D7%90%D7%9F-2017-out003.jpg",
+        "year": "2018",
+        "price": "25000",
+        "condition": "Used"
+    },
+    {
+        "make": "Mazda",
+        "model": "3",
+        "img_url": "https://www.carbuy.co.il/images/stories/com_form2content/p1/f262/__5.jpg",
+        "year": "2020",
+        "price": "300000",
+        "condition": "New"
+    },
+    {
+        "make": "Mazda",
+        "model": "2",
+        "img_url": "https://upload.wikimedia.org/wikipedia/commons/e/ed/2014_Mazda2_%28DJ%29_Genki_hatchback_%282015-08-07%29_01.jpg",
+        "year": "2016",
+        "price": "40000",
+        "condition": "Used"
+    },
+    {
+        "make": "Mazda",
+        "model": "2",
+        "img_url": "https://www.mazda.co.il/Uploads/ProductPage/model_page-mazda_2/Mazda_2_gallery/Exterior/gal7.jpg",
+        "year": "2017",
+        "price": "55000",
+        "condition": "Used"
+    },
+    {
+        "make": "Mazda",
+        "model": "2",
+        "img_url": "https://i.ytimg.com/vi/ohgtXFBDCow/maxresdefault.jpg",
+        "year": "2019",
+        "price": "86000",
+        "condition": "Used"
+    },
+    {
+        "make": "Mazda",
+        "model": "2",
+        "img_url": "https://www.cartube.co.il/images/stories/mazda/mazda-2/2017/mazda-2-2017-flll-970px.jpg",
+        "year": "2020",
+        "price": "350000",
+        "condition": "New"
+    },
+    {
+        "make": "Mazda",
+        "model": "CX5",
+        "img_url": "https://www.kipa.co.il/userFiles/311613_684e720a50da7e90528c5fda5289248e.jpg",
+        "year": "2015",
+        "price": "185000",
+        "condition": "Used"
+    },
+    {
+        "make": "Mazda",
+        "model": "CX5",
+        "img_url": "https://www.icar.co.il/_media/images/models/new/mazda/cx5/new/mazda-CX5-new-Front.jpg",
+        "year": "2014",
+        "price": "155000",
+        "condition": "Used"
+    },
+    {
+        "make": "Mazda",
+        "model": "CX5",
+        "img_url": "https://www.carbuy.co.il/images/stories/com_form2content/p1/f225/Mazda-CX-5_EU-Version-2017-1600-4a.jpeg",
+        "year": "2017",
+        "price": "286000",
+        "condition": "Used"
+    },
+    {
+        "make": "Mazda",
+        "model": "CX5",
+        "img_url": "https://www.cartube.co.il/images/stories/mazda/cx-5/2015-cx5-fl-small-e4.jpg",
+        "year": "2020",
+        "price": "550000",
+        "condition": "New"
+    },
+    {
+        "make": "Mazda",
+        "model": "6",
+        "img_url": "https://www.gear.co.il/Content/MediaItems/Galleries/%D7%9E%D7%91%D7%97%D7%A0%D7%99-%D7%93%D7%A8%D7%9A/%D7%9E%D7%91%D7%97%D7%9F-%D7%93%D7%A8%D7%9B%D7%99%D7%9D-%D7%9E%D7%90%D7%96%D7%93%D7%94-6-2019/%D7%9E%D7%91%D7%97%D7%9F-%D7%93%D7%A8%D7%9B%D7%99%D7%9D-%D7%9E%D7%90%D7%96%D7%93%D7%94-6-2019-out009.jpg",
+        "year": "2014",
+        "price": "85000",
+        "condition": "Used"
+    },
+    {
+        "make": "Mazda",
+        "model": "6",
+        "img_url": "https://www.cartube.co.il/images/stories/mazda/mazda-6/2017/2019-Mazda6-24-970px.jpg",
+        "year": "2020",
+        "price": "185000",
+        "condition": "New"
+    },
+    {
+        "make": "Mazda",
+        "model": "6",
+        "img_url": "https://www.mazda.co.il/Uploads/ProductPage/360/13/1d3248/1.jpg?width=750",
+        "year": "2020",
+        "price": "355000",
+        "condition": "New"
+    },
+    {
+        "make": "Mazda",
+        "model": "6",
+        "img_url": "https://www.sport5.co.il/Sip_Storage/FILES/0/size475x318/1009590.jpg",
+        "year": "2015",
+        "price": "65000",
+        "condition": "Used"
+    },
+    {
+        "make": "Ford",
+        "model": "Focus",
+        "img_url": "https://picolio.auto123.com/15photo/ford/2015-ford-focus-se_1.png",
+        "year": "2016",
+        "price": "15000",
+        "condition": "Used"
+    },
+    {
+        "make": "Ford",
+        "model": "Focus",
+        "img_url": "https://www.cartube.co.il/images/stories/ford/general2/Ford-Focus_ST_2015_small.jpg",
+        "year": "2018",
+        "price": "85000",
+        "condition": "Used"
+    },
+    {
+        "make": "Ford",
+        "model": "Focus",
+        "img_url": "https://www.cartube.co.il/media/showtime/storage/2020/05/06/30/main/ford-focus-active-2020-7.jpg?1588796378",
+        "year": "2020",
+        "price": "215000",
+        "condition": "New"
+    },
+    {
+        "make": "Ford",
+        "model": "Focus",
+        "img_url": "https://photos.yad2.co.il/photos/submodels/o/25860.png",
+        "year": "2020",
+        "price": "295000",
+        "condition": "New"
+    },
+    {
+        "make": "Ford",
+        "model": "Mustang",
+        "img_url": "https://images.auto.co.il/Attachment/Gallery/236347//1581437/original.jpg?width=500",
+        "year": "2020",
+        "price": "315000",
+        "condition": "New"
+    },
+    {
+        "make": "Ford",
+        "model": "Mustang",
+        "img_url": "https://www.icar.co.il/_media/userfiles/image/images/%D7%A4%D7%95%D7%A8%D7%93%20%D7%9E%D7%95%D7%A1%D7%98%D7%A0%D7%92%20%D7%94%D7%97%D7%93%D7%A9%D7%94.jpg",
+        "year": "2016",
+        "price": "115000",
+        "condition": "Used"
+    },
+    {
+        "make": "Ford",
+        "model": "Mustang",
+        "img_url": "https://dreamcars.co.il/wp-content/uploads/2019/07/IMG_1192.jpg",
+        "year": "2020",
+        "price": "415000",
+        "condition": "New"
+    },
+    {
+        "make": "Ford",
+        "model": "Mustang",
+        "img_url": "https://www.autosport.co.il/wp-content/uploads/2015/03/1987949039171574299.jpg",
+        "year": "2014",
+        "price": "105000",
+        "condition": "Used"
+    },
+    {
+        "make": "Ford",
+        "model": "Fiesta",
+        "img_url": "https://www.icar.co.il/_media/galleries/3180.jpg",
+        "year": "2014",
+        "price": "35000",
+        "condition": "Used"
+    },
+    {
+        "make": "Ford",
+        "model": "Fiesta",
+        "img_url": "https://www.kvishim.co.il/wp-content/uploads/images-007/ford-fiesta-1.jpg",
+        "year": "2015",
+        "price": "38000",
+        "condition": "Used"
+    },
+    {
+        "make": "Ford",
+        "model": "Fiesta",
+        "img_url": "https://photos.yad2.co.il/photos/submodels/o/26070.png",
+        "year": "2020",
+        "price": "95000",
+        "condition": "New"
+    },
+    {
+        "make": "Ford",
+        "model": "Fiesta",
+        "img_url": "https://m.auto.co.il/Attachment/Gallery/234320/1589734/_crop_to50_750x750.jpg",
+        "year": "2014",
+        "price": "27000",
+        "condition": "Used"
+    },
+    {
+        "make": "Ford",
+        "model": "GTR1",
+        "img_url": "https://i.ytimg.com/vi/PbhsExiKnUY/maxresdefault.jpg",
+        "year": "2015",
+        "price": "505000",
+        "condition": "Used"
+    },
+    {
+        "make": "Ford",
+        "model": "GTR1",
+        "img_url": "https://live.staticflickr.com/3704/12291604566_e3cc6f747a_h.jpg",
+        "year": "2014",
+        "price": "444450",
+        "condition": "Used"
+    },
+    {
+        "make": "Ford",
+        "model": "GTR1",
+        "img_url": "https://n7.nextpng.com/sticker-png/515/38/sticker-png-shelby-mustang-2018-ford-mustang-car-ford-shelby-gt350-ford-driving-car-performance-car-vehicle-thumbnail.png",
+        "year": "2018",
+        "price": "755250",
+        "condition": "Used"
+    },
+    {
+        "make": "Ford",
+        "model": "GTR1",
+        "img_url": "https://n7.nextpng.com/sticker-png/577/787/sticker-png-2010-ford-shelby-gt500-ford-mustang-ford-gt-ford-f-series-ford-compact-car-glass-blue-computer-wallpaper-thumbnail.png",
+        "year": "2019",
+        "price": "850000",
+        "condition": "Used"
+    },
+    {
+        "make": "Renault",
+        "model": "Hatchback",
+        "img_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/2015_Renault_Clio_%28X98%29_Expression_hatchback_%2826317268600%29.jpg/1024px-2015_Renault_Clio_%28X98%29_Expression_hatchback_%2826317268600%29.jpg",
+        "year": "2019",
+        "price": "95000",
+        "condition": "Used"
+    },
+    {
+        "make": "Renault",
+        "model": "Hatchback",
+        "img_url": "https://www.autos-motos.net/pictures/BE870635970/147036/image-01-B~v1559826646.JPG",
+        "year": "2018",
+        "price": "75000",
+        "condition": "Used"
+    },
+    {
+        "make": "Renault",
+        "model": "Hatchback",
+        "img_url": "https://1.bp.blogspot.com/-RPN6h7U7UP8/VU8fByJfZZI/AAAAAAAAGIE/m1-bEGC7IIM/s640/2015%2BRenault%2BClio%2BPrice%2BDesign%2BPerformance.jpg",
+        "year": "2020",
+        "price": "195000",
+        "condition": "New"
+    },
+    {
+        "make": "Renault",
+        "model": "Hatchback",
+        "img_url": "https://scalethumb.leparking.fr/unsafe/331x248/smart/https://cloud.leparking.fr/2019/10/10/01/41/renault-megane-coupe-renault-megane-rs-2015_7161118780.jpg",
+        "year": "2016",
+        "price": "95000",
+        "condition": "Used"
+    },
+    {
+        "make": "Renault",
+        "model": "Megane",
+        "img_url": "https://www.renault.co.il/CountriesData/Israel/images/cars/GrandCoupe/packshots/grandCoupe-executive_ig_w600_h337.jpg",
+        "year": "2020",
+        "price": "155000",
+        "condition": "New"
+    },
+    {
+        "make": "Renault",
+        "model": "Megane",
+        "img_url": "https://www.ynet.co.il/PicServer5/2019/01/25/9025824/90258105972098640360no.jpg",
+        "year": "2016",
+        "price": "95000",
+        "condition": "Used"
+    },
+    {
+        "make": "Renault",
+        "model": "Megane",
+        "img_url": "https://images.auto.co.il/Attachment/Gallery/238573//1587945/original.jpg?width=1016",
+        "year": "2014",
+        "price": "45000",
+        "condition": "Used"
+    },
+    {
+        "make": "Renault",
+        "model": "Megane",
+        "img_url": "https://www.renault.co.il/CountriesData/Israel/images/cars/GrandCoupe/product/grandCoupe-g2_ig_w1500_h843.jpg",
+        "year": "2020",
+        "price": "75000",
+        "condition": "New"
+    },
+    {
+        "make": "Renault",
+        "model": "Clio",
+        "img_url": "https://www.cartube.co.il/images/stories/renault/clio/2019/renault_clio_9717-970px.jpg",
+        "year": "2020",
+        "price": "153000",
+        "condition": "New"
+    },
+    {
+        "make": "Renault",
+        "model": "Clio",
+        "img_url": "https://carclick.co.il/wp-content/uploads/2015/11/%D7%A8%D7%A0%D7%95-%D7%A7%D7%9C%D7%99%D7%90%D7%95-2017-1.jpg",
+        "year": "2020",
+        "price": "175000",
+        "condition": "New"
+    },
+    {
+        "make": "Renault",
+        "model": "Clio",
+        "img_url": "https://images.maariv.co.il/image/upload/f_auto,fl_lossy/c_fill,g_faces:center,h_380,w_500/559332",
+        "year": "2014",
+        "price": "65000",
+        "condition": "Used"
+    },
+    {
+        "make": "Renault",
+        "model": "Clio",
+        "img_url": "https://www.carbuy.co.il/images/stories/com_form2content/p1/f178/image1-1.jpg",
+        "year": "2015",
+        "price": "48000",
+        "condition": "Used"
+    },
+    {
+        "make": "Renault",
+        "model": "Koleos",
+        "img_url": "https://www.cartube.co.il/images/stories/renault/koleos/general/Renault-Koleos-2020-1600-01-970px.jpg",
+        "year": "2019",
+        "price": "148000",
+        "condition": "Used"
+    },
+    {
+        "make": "Renault",
+        "model": "Koleos",
+        "img_url": "https://www.renault.co.il/CountriesData/Israel/images/cars/koleos/packshots/koleos-initiale-paris_ig_w600_h337.jpg",
+        "year": "2020",
+        "price": "295000",
+        "condition": "New"
+    },
+    {
+        "make": "Renault",
+        "model": "Koleos",
+        "img_url": "https://www.renault.co.il/CountriesData/Israel/images/cars/koleos/design/koleos-exterior-img01_ig_w1500_h843.jpg",
+        "year": "2019",
+        "price": "179000",
+        "condition": "Used"
+    },
+    {
+        "make": "Renault",
+        "model": "Koleos",
+        "img_url": "https://images.auto.co.il/Attachment/Gallery/239202/1591479/_crop_to50_1023x370.png?height=302",
+        "year": "2018",
+        "price": "168000",
+        "condition": "Used"
+    },
+    {
+        "make": "Seat",
+        "model": "Ibiza",
+        "img_url": "https://www.carsforum.co.il/cars/images/cars/seat/ibiza-3dr/main.jpg",
+        "year": "2016",
+        "price": "55000",
+        "condition": "Used"
+    },
+    {
+        "make": "Seat",
+        "model": "Ibiza",
+        "img_url": "https://images.auto.co.il/Attachment/Gallery/1748/1626678/Seat-Ibiza-2016.png?width=500",
+        "year": "2017",
+        "price": "65000",
+        "condition": "Used"
+    },
+    {
+        "make": "Seat",
+        "model": "Ibiza",
+        "img_url": "https://thecar.co.il/wp-content/uploads/2015/07/SEAT-IBIZA-03.jpg",
+        "year": "2019",
+        "price": "95000",
+        "condition": "Used"
+    },
+    {
+        "make": "Seat",
+        "model": "Ibiza",
+        "img_url": "https://upload.wikimedia.org/wikipedia/commons/8/84/2018_SEAT_Ibiza_SE_Technology_MPi_1.0_Front.jpg",
+        "year": "2014",
+        "price": "88000",
+        "condition": "Used"
+    },
+    {
+        "make": "Seat",
+        "model": "Leon",
+        "img_url": "https://s1.cdn.autoevolution.com/images/gallery/SEAT-Leon-SC-3-doors-4766_20.jpg",
+        "year": "2020",
+        "price": "105000",
+        "condition": "New"
+    },
+    {
+        "make": "Seat",
+        "model": "Leon",
+        "img_url": "https://www.cartube.co.il/images/stories/seat/leon/2020/IPP-All-new-SEAT-Leon_45_HQ-970px.jpg",
+        "year": "2020",
+        "price": "125000",
+        "condition": "New"
+    },
+    {
+        "make": "Seat",
+        "model": "Leon",
+        "img_url": "https://wheel.co.il/wp-content/uploads/2020/05/WhatsApp-Image-2020-05-25-at-15.52.14.jpeg",
+        "year": "2015",
+        "price": "65000",
+        "condition": "Used"
+    },
+    {
+        "make": "Seat",
+        "model": "Leon",
+        "img_url": "https://www.cartube.co.il/images/stories/seat/leon/2018/DGT_79352_Gallery_Site_Pics_1440x800_leon_5D2-970px.jpg",
+        "year": "2016",
+        "price": "105000",
+        "condition": "Used"
+    },
+    {
+        "make": "Seat",
+        "model": "Arona",
+        "img_url": "https://www.automag.co.il/wp-content/uploads/2017/10/SEAT-Arona-048L.jpg",
+        "year": "2016",
+        "price": "105000",
+        "condition": "Used"
+    },
+    {
+        "make": "Seat",
+        "model": "Arona",
+        "img_url": "https://www.icar.co.il/_media/images/models/new/seat/arona/New/seat-arona-New-Front.jpg",
+        "year": "2014",
+        "price": "105000",
+        "condition": "Used"
+    },
+    {
+        "make": "Seat",
+        "model": "Arona",
+        "img_url": "https://www.carcost.co.il/Images/CkfinderUpluad/images/%D7%A1%D7%99%D7%90%D7%98%20%D7%90%D7%A8%D7%95%D7%A0%D7%94%20%D7%97%D7%A6%D7%95%D7%A0%D7%99%201.jpg",
+        "year": "2015",
+        "price": "135000",
+        "condition": "Used"
+    },
+    {
+        "make": "Seat",
+        "model": "Arona",
+        "img_url": "https://images.auto.co.il/Attachment/Gallery/241321/1620752/ARONA%20022_a%20copy.jpg?width=500",
+        "year": "2020",
+        "price": "255000",
+        "condition": "New"
+    },
+    {
+        "make": "Seat",
+        "model": "Ateca",
+        "img_url": "https://www.cartube.co.il/media/showtime/storage/2020/06/15/71/main/seat_ateca_01_hq.jpg?1592212082",
+        "year": "2020",
+        "price": "355000",
+        "condition": "New"
+    },
+    {
+        "make": "Seat",
+        "model": "Ateca",
+        "img_url": "https://www.icar.co.il/_media/images/models/new/seat/ateca/New/seat-ateca-New-front.jpg",
+        "year": "2018",
+        "price": "165000",
+        "condition": "Used"
+    },
+    {
+        "make": "Seat",
+        "model": "Ateca",
+        "img_url": "https://www.seat.co.il/wp-content/uploads/2020/01/item3.resizedViewPort.scale_.vehicleExteriorModelImage.png",
+        "year": "2019",
+        "price": "272000",
+        "condition": "Used"
+    },
+    {
+        "make": "Seat",
+        "model": "Ateca",
+        "img_url": "https://www.kvishim.co.il/wp-content/uploads/images-006/Seat-Ateca-2017-3.jpg",
+        "year": "2017",
+        "price": "135000",
+        "condition": "Used"
+    }
+]
+
