@@ -23,7 +23,7 @@ const Styles = makeStyles(theme => ({
    
   }
 }));
-function GetCarsList() {
+function GetCarListAndDisplay() {
   const [cars, setCars] = useState([]);
   const [carsSelectOptions, setCarsSelectOptions] = useState([]);
   const [arrayAfterFilterHolder, setArrayAfterFilterHolder] = useState(null);
@@ -62,9 +62,7 @@ function GetCarsList() {
     }
    
     const afterfilter = cars.filter(cars => {
-      if (cars.make === event.target.value) {
-        return cars;
-      }
+      return cars.make === event.target.value 
     });
     setCarsListAfterFilter(afterfilter);
 
@@ -72,20 +70,17 @@ function GetCarsList() {
     return;
   };
 
-  const hendelYearChange = event => {
+  const handleYearChange = event => {
     if (arrayAfterFilterHolder === null) {
       const afterYearFilter = cars.filter(carsYear => {
-        if (Number(carsYear.year) === Number(event.target.value)) {
-          return carsYear;
-        }
+      return Number(carsYear.year) === Number(event.target.value) 
+          //  carsYear;
       });
       setCarsListAfterFilter(afterYearFilter);
       return;
     }
     const afterFilter = arrayAfterFilterHolder.filter(data => {
-      if (Number(data.year) === Number(event.target.value)) {
-        return data;
-      }
+    return Number(data.year) === Number(event.target.value) 
     });
 
     setCarsListAfterFilter(afterFilter);
@@ -96,7 +91,7 @@ function GetCarsList() {
       return <MenuItem key={i} value={`${options}`}>{options}</MenuItem>;
     });
   };
-  //to do filter by model
+
   return (
     <div style={{ textAlign: "center" }}>
       <Typography variant="h4">Search by :</Typography>
@@ -116,7 +111,7 @@ function GetCarsList() {
           id="standard-basic"
           placeholder="between 2010-2020"
           type="number"
-          onChange={hendelYearChange}
+          onChange={handleYearChange}
           label="Year"
         />
       </FormControl>
@@ -125,4 +120,4 @@ function GetCarsList() {
   );
 }
 
-export default GetCarsList;
+export default GetCarListAndDisplay;
