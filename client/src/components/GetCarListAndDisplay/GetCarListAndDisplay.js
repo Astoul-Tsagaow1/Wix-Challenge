@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import DisplayCarList from "./DisplayCarList";
+import DisplayCarList from "../DisplayCarList/DisplayCarList";
 import FormControl from "@material-ui/core/FormControl";
 import TextField from "@material-ui/core/TextField";
 import InputLabel from "@material-ui/core/InputLabel";
@@ -13,7 +13,7 @@ import CircularProgress from '@material-ui/core/CircularProgress';
 const Styles = makeStyles(theme => ({
   formControl: {
     margin: theme.spacing(2),
-    minWidth: 250,
+    minWidth: 300,
     minHeight: 100
   },
   root: {

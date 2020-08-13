@@ -1,5 +1,5 @@
 import React from "react";
-import GetCarListAndDisplay from "./components/GetCarListAndDisplay";
+import GetCarListAndDisplay from "./components/GetCarListAndDisplay/GetCarListAndDisplay";
 import { Typography } from "@material-ui/core";
 import Box from "@material-ui/core/Box";
 import { motion } from "framer-motion"
