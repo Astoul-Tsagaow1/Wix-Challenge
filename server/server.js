@@ -2,7 +2,7 @@ console.log("app is loading ...");
 
 const express = require("express");
 // const axios = require("axios");
-const PORT = 5000 || process.env.PORT;
+const PORT = 5000 || process.env.NODE_ENV;
 const data = require('./data.json');
 const app = express();
 const path = require('path');
