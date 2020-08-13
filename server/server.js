@@ -27,13 +27,13 @@ app.get("/getAllcars", (req, res) => {
 });
 
 //deployment
-if (process.env.NODE_ENV === "production") {
-  const root = path.join(__dirname,'..',"client","build");
+// if (PORT === "production") {
+  const root = path.join(__dirname,'..',"client","public");
   app.use(express.static(root));
   app.get("*", (req, res) => {
       res.sendFile("index.html", { root });
   });
-};
+// };
 
 app.listen(PORT , () => {
   console.log(`listening to port ${PORT}`);
