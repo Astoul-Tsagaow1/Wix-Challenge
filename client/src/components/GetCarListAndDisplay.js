@@ -12,15 +12,15 @@ import CircularProgress from '@material-ui/core/CircularProgress';
 
 const Styles = makeStyles(theme => ({
   formControl: {
-    margin: theme.spacing(1),
-    minWidth: 350,
+    margin: theme.spacing(2),
+    minWidth: 250,
     minHeight: 100
   },
   root: {
     display: 'flex',
-    '& > * + *': {
-      marginLeft: theme.spacing(2),
-    },
+    justifyContent:'center',
+    alignItems:'ceter'
+   
   }
 }));
 function GetCarsList() {

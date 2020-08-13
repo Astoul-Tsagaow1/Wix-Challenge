@@ -8,7 +8,22 @@ import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import Box from '@material-ui/core/Box';
+import { motion } from "framer-motion"
 
+const containerVariants = {
+  hidden: {
+      opacity: 0,
+      x:0
+  },
+  visible: {
+    opacity: 1,
+    y: '5vh',
+    transition:{
+      type:'spring',
+      delay:0.5
+    }
+  }
+}
 const Styles = makeStyles({
   root: {
     maxWidth: 400,
@@ -27,7 +42,8 @@ export default function displayCArList(props) {
   console.log(props.ListOfCars);
     const getCarList = arrayOfcars  => {
         return arrayOfcars.map((car,i) => {
-          return (  <Card key={i}className={classes.root} >
+          return ( 
+             <Card key={i}className={classes.root} >
             <CardActionArea>
               <CardMedia
                 className={classes.media}
@@ -58,12 +74,12 @@ export default function displayCArList(props) {
         });
       };
     return (    
-      <div style={{width:'100%'}}>
+      <motion.div variants={containerVariants} initial="hidden" animate='visible' style={{width:'100%'}}>
       <Box display='flex'  flexWrap="wrap" justifyContent="center" >
          {getCarList(props.ListOfCars)}
       </Box>
         
-       </div>
+       </motion.div>
     )
 }
 // horsepower: 201

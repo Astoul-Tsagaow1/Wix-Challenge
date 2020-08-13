@@ -1,9 +1,23 @@
 import React from "react";
-// import"./app.css"
-
 import GetCarsList from "./components/GetCarListAndDisplay";
 import { Typography } from "@material-ui/core";
 import Box from "@material-ui/core/Box";
+import { motion } from "framer-motion"
+
+const containerVariants = {
+  hidden: {
+      opacity: 0,
+      x:'50vw '
+  },
+  visible: {
+    opacity: 1,
+    x: 0,
+    transition:{
+      type:'spring',
+      delay:0.5
+    }
+  }
+}
 function App() {
   return (
     <div className="App">
@@ -18,8 +32,8 @@ function App() {
           AsCars <b>Wix challenge</b>
         </Box>{" "}
       </Typography>
-
-      <Typography>
+<motion.div variants={containerVariants} initial="hidden" animate='visible'>
+<Typography>
         <Box
           letterSpacing={6}
           fontSize="2.75rem"
@@ -30,6 +44,8 @@ function App() {
           Cars Catalog
         </Box>
       </Typography>
+</motion.div>
+
 
       <GetCarsList />
     </div>
