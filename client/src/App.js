@@ -1,56 +1,48 @@
-import React from "react";
+import React,{useState , useEffect} from "react";
 import GetCarListAndDisplay from "./components/GetCarListAndDisplay/GetCarListAndDisplay";
-import { Typography } from "@material-ui/core";
-import Box from "@material-ui/core/Box";
-import { motion } from "framer-motion";
 import './App.css'
+import AppBar from "./components/AppBar/AppBar";
+import { Router, Route, Switch ,BrowserRouter} from "react-router-dom";
+import Register from "./components/Register/Register";
+import history from './history'
+import Login from './components/Login/Login'
 
-const containerVariants = {
-  hidden: {
-      opacity: 0,
-      x:'50vw '
-  },
-  visible: {
-    opacity: 1,
-    x: 0,
-    transition:{
-      type:'spring',
-      delay:0.5
-    }
-  }
-}
+
 function App() {
   return (
+    <Router history={history}>
     <div className="App">
-      <Typography>
-        <Box
-          bgcolor="primary.main"
-          fontSize="2.3rem"
-          fontFamily="Roboto"
-          color="white "
-          p={5}
-        >
-          AsCars <b>Wix challenge</b>
-        </Box>{" "}
-      </Typography>
-<motion.div variants={containerVariants} initial="hidden" animate='visible'>
-<Typography>
-        <Box
-          letterSpacing={6}
-          fontSize="2.75rem"
-          variant="h2"
-          align="center"
-          fontFamily="Roboto"
-        >
-          Cars Catalog
-        </Box>
-      </Typography>
-</motion.div>
+       <AppBar/>
+      <Route path="/" exact component={GetCarListAndDisplay}></Route>
 
+      <Route path="/register" exact component={Register}></Route>
+      <Route path="/login" exact component={Login}></Route>
 
-      <GetCarListAndDisplay />
     </div>
+    </Router>
   );
 }
 //
 export default App;
+
+
+
+
+
+{/* <Router history={history}>
+<Header />
+<div>
+  <Switch>
+    <Route path="/" exact component={SreamList}></Route>
+    <Route path="/stream/Delete" exact component={StreamDelete}></Route>
+    <Route path="/stream/Create" exact component={StreamCreate}></Route>
+    <Route path="/stream/Edit/:id" exact component={StreamEdit}></Route>
+    <Route
+      path="/stream/Delete/:id"
+      exact
+      component={StreamDelete}
+    ></Route>
+    <Route path="/stream/:id" exact component={StreamShow}></Route>
+  </Switch>
+</div>
+</Router> */}

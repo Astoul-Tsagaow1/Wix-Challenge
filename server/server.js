@@ -1,42 +1,48 @@
 console.log("app is loading ...");
-
 const express = require("express");
-// const axios = require("axios");
 const PORT = 5000 || process.env.NODE_ENV;
-const data = require('./data.json');
+const data = require("./data.json");
 const app = express();
-const path = require('path');
-// "https://private-anon-ab9cc9d997-carsapi1.apiary-mock.com/cars"
-// axios.get("https://private-anon-ab9cc9d997-carsapi1.apiary-mock.com/cars")
-// .then(res=>{
-//   // console.log(res.data);
-//   // allcars= [...res.data,...JSON.parse(JSON.stringify(data)) ] 
-// // console.log(allcars);
-// }) 
+const path = require("path");
+const userRegisterModule = require('./modules/userRegister/userRegister');
+const userLoginModule = require('./modules/userLogin/userLogin');
+const userLoginAuthModule = require('./modules/UserLoginWithFB/AuthLogin');
 
-// .catch(err=>{
+app.use(express.json());
 
 
-//   console.log(err);
-// })
 
-app.get("/getAllcars", (req, res) => { 
-  // JSON.parse(JSON.stringify(data)
-  // res.status(200).send(allCars);
+
+app.get("/getAllcars", (req, res) => {
   res.status(200).send(JSON.parse(JSON.stringify(data)));
 });
 
-//deployment
-if (PORT === "production") {
-  const root = path.join(__dirname,'..','client/build');
-  console.log(root);
-  app.use(express.static(root));
-  app.get("*", (req, res) => {
-      res.sendFile("index.html", { root });
-  });
-};
 
-app.listen(PORT , () => {
+app.post("/userRegister", (req, res) => {
+  userRegisterModule.userRegister(req, res);
+});
+
+app.post("/userLogin",(req, res) => {
+  userLoginModule.userLogin(req,res)
+});
+
+app.post("/userLoginAuth",(req, res) => {
+  userLoginAuthModule.userLoginWithAuth(req,res)
+});
+
+
+
+app.route('https://localhost:3000')
+//deployment
+// if (PORT === "production") {
+//   const root = path.join(__dirname,'..','client/build');
+//   console.log(root);
+//   app.use(express.static(root));
+//   app.get("*", (req, res) => {
+//       res.sendFile("index.html", { root });
+//   });
+// };
+
+app.listen(PORT, () => {
   console.log(`listening to port ${PORT}`);
 });
-   

@@ -26,7 +26,7 @@ const Styles = makeStyles(theme => ({
 function GetCarListAndDisplay() {
   const [cars, setCars] = useState([]);
   const [carsSelectOptions, setCarsSelectOptions] = useState([]);
-  const [arrayAfterFilterHolder, setArrayAfterFilterHolder] = useState(null);
+  // const [arrayAfterFilterHolder, setArrayAfterFilterHolder] = useState(null);
   const [carsListAfterFilter, setCarsListAfterFilter] = useState(null);
 
   const classes = Styles();
@@ -56,34 +56,34 @@ function GetCarListAndDisplay() {
   const filterByCarsNamesChange = event => {
     if (event.target.value === "All") {
       setCarsListAfterFilter(null);
-      setArrayAfterFilterHolder(null);
+      // setArrayAfterFilterHolder(null);
       return;
-      //show all cars to users
     }
+
+    
    
     const afterfilter = cars.filter(cars => {
       return cars.make === event.target.value 
     });
     setCarsListAfterFilter(afterfilter);
 
-    setArrayAfterFilterHolder(afterfilter);
+    // setArrayAfterFilterHolder(afterfilter);
     return;
   };
 
   const handleYearChange = event => {
-    if (arrayAfterFilterHolder === null) {
+    if (carsListAfterFilter === null) {
       const afterYearFilter = cars.filter(carsYear => {
       return Number(carsYear.year) === Number(event.target.value) 
-          //  carsYear;
       });
       setCarsListAfterFilter(afterYearFilter);
       return;
     }
-    const afterFilter = arrayAfterFilterHolder.filter(data => {
+    const afterFilter = carsListAfterFilter.filter(data => {
     return Number(data.year) === Number(event.target.value) 
     });
-
-    setCarsListAfterFilter(afterFilter);
+console.log( afterFilter,"after year filter");
+    setCarsListAfterFilter(afterFilter );
     return;
   };
   const selecteOptionsMaker = arrayofYaerOrcarNames => {
@@ -115,6 +115,7 @@ function GetCarListAndDisplay() {
           label="Year"
         />
       </FormControl>
+
       <DisplayCarList ListOfCars={carsListAfterFilter || cars} />
     </div>
   );
