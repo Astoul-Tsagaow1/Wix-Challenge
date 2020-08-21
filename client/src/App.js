@@ -16,7 +16,7 @@ function App() {
        <AppBar/>
       <Route path="/" exact component={HomePage}></Route>
 
-      <Route path="/ggg" exact component={GetCarListAndDisplay}></Route>
+      <Route path="/cars-list" exact component={GetCarListAndDisplay}></Route>
 
       <Route path="/register" exact component={Register}></Route>
       <Route path="/login" exact component={Login}></Route>
