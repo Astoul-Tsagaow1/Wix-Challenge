@@ -8,6 +8,7 @@ import LogInWithFaceBook from "../RegisterWithFaceBook/LogInWithFaceBook";
 import LoginWithGoogleCopy from "../RegisterWithGoogle/LoginWithGoogleCopy";
 import "./AppBar.css";
 import { Link } from "react-router-dom";
+import {connect} from 'react-redux'
 
 // const containerVariants = {
 //     hidden: {
@@ -23,32 +24,34 @@ import { Link } from "react-router-dom";
 //       }
 //     }
 //   }
-export default function AppBar() {
+ function AppBar(props) {
+
   return (
-    <div>
+    <div style={{width:'100vw'}}>
       <Typography component={"span"}>
         <Box
-          bgcolor="primary.main"
-          fontSize="2rem"
+          // bg="dark"
+          css={{bgcolor:"black"}}
+          fontSize="3rem"
           fontFamily="Roboto"
           color="white "
-          p={5}
+          p={1}
         >
           AsCars <b>Wix challenge</b>
-          <div style={{ width: "100%" }}>
-            <Box p={1} display="flex">
-              <Box p={1} width="100%" className="App-Bar-Links">
+          {/* <div style={{ width: "100%" }}> */}
+            {/* <Box p={1} display="flex"> */}
+              {/* <Box p={1} width="100%" className="App-Bar-Links">
                 <Link to="/register"> Register </Link>||
                 <Link to="/login"> Login </Link>
-              </Box>
-              <Box p={1} flexShrink={1}>
+              </Box> */}
+              {/* <Box p={1} flexShrink={1}>
                 <LoginWithGoogleCopy />
               </Box>
               <Box p={1} flexShrink={0}>
                 <LogInWithFaceBook />
-              </Box>
-            </Box>
-          </div>
+              </Box> */}
+            {/* </Box> */}
+          {/* </div> */}
         </Box>
       </Typography>
       {/* <motion.div variants={containerVariants} initial="hidden" animate='visible'>
@@ -61,3 +64,9 @@ export default function AppBar() {
     </div>
   );
 }
+
+// const showMeMystate = (state)=>{
+// console.log(state);
+// return {state}
+// }
+export default connect()(AppBar)

@@ -6,6 +6,7 @@ import { Router, Route, Switch ,BrowserRouter} from "react-router-dom";
 import Register from "./components/Register/Register";
 import history from './history'
 import Login from './components/Login/Login'
+import HomePage from "./components/HomePage/HomePage";
 
 
 function App() {
@@ -13,7 +14,9 @@ function App() {
     <Router history={history}>
     <div className="App">
        <AppBar/>
-      <Route path="/" exact component={GetCarListAndDisplay}></Route>
+      <Route path="/" exact component={HomePage}></Route>
+
+      <Route path="/ggg" exact component={GetCarListAndDisplay}></Route>
 
       <Route path="/register" exact component={Register}></Route>
       <Route path="/login" exact component={Login}></Route>

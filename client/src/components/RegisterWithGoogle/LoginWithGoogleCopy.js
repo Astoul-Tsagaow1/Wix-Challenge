@@ -1,8 +1,7 @@
 import Button from "@material-ui/core/Button";
 import { createMuiTheme } from '@material-ui/core/styles';
-import purple from '@material-ui/core/colors/purple';
-import green from '@material-ui/core/colors/green';
-
+import {connect} from 'react-redux'
+import {SignIn ,SignOut} from '../../Actions/index'
 import React, { useEffect, useState } from "react";
 // import axios from 'axios'
 const CLIENT_ID =
@@ -19,10 +18,9 @@ const CLIENT_ID =
     return datetime
     }
     
-export default function LoginWithGoogleCopy (){
+function LoginWithGoogleCopy (props){
   const [isLogined, setIsLogined] = useState(false);
   const [accessToken, setaccessToken] = useState("");
-
 useEffect(()=>{
   window.gapi.load("client:auth2" , ()=>{
     return window.gapi.client.init({
@@ -35,12 +33,13 @@ useEffect(()=>{
      auth.isSignedIn.listen(onAuthChange)
      })
  });
-},[])
+})
 
 const onAuthChange = (isSignedIn) =>{ 
   if (isSignedIn) {
        console.log(isSignedIn);
        localStorage.setItem('useralreadlogin',true);         
+       props.SignIn('google')
 
      return setIsLogined(true)
       
@@ -59,7 +58,6 @@ const RenderAuthButton=()=>{
   }
   else if (isLogined) {
       return <Button variant="contained" color="primary" onClick={HendaleSignOutClick} >
-          <i className="google icon"/>
          Logout 
           </Button >
       
@@ -78,16 +76,24 @@ const RenderAuthButton=()=>{
     let auth = window.gapi.auth2.getAuthInstance();
  auth.signIn()
 
+
 }
 
 const HendaleSignOutClick = () =>{
   let auth = window.gapi.auth2.getAuthInstance();
 
     auth.signOut();
-    // setIsLogined(false)
+    props.SignOut()
 
 }
 return(
   RenderAuthButton()
 )
 }
+
+
+// const showMeMystate = (state)=>{
+// console.log(state);
+//   // return{}
+// }
+export default connect()(LoginWithGoogleCopy)

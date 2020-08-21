@@ -36,7 +36,7 @@ const Styles = makeStyles({
 
 });
 
-export default function displayCArList(props) {
+export default function displayCarList(props) {
   const classes = Styles();
 
   console.log(props.ListOfCars);
