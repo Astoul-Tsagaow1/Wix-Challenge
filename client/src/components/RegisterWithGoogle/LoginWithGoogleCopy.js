@@ -5,7 +5,7 @@ import {SignIn ,SignOut} from '../../Actions/index'
 import React, { useEffect, useState } from "react";
 // import axios from 'axios'
 const CLIENT_ID =
-  "985456443459-s88anfsj9ok4qpdqcn1s29usqhgt594q.apps.googleusercontent.com";
+  "*******************-********.**********";
 
   const timeLogiin = ()=>{
     let currentdate = new Date(); 
