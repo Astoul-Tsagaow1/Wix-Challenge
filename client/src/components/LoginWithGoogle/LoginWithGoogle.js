@@ -1,12 +1,8 @@
 import Button from "@material-ui/core/Button";
-import { createMuiTheme } from '@material-ui/core/styles';
 import {connect} from 'react-redux'
-import {SignIn ,SignOut} from '../../Actions/index'
 import React, { useEffect, useState } from "react";
-// import axios from 'axios'
 const CLIENT_ID =
   "*******************-********.**********";
-
   const timeLogiin = ()=>{
     let currentdate = new Date(); 
     let datetime = "login Time : " + currentdate.getDate() + "/"
@@ -17,10 +13,10 @@ const CLIENT_ID =
                     + currentdate.getSeconds();
     return datetime
     }
-    
-function LoginWithGoogleCopy (props){
+
+function LoginWithGoogle(){
   const [isLogined, setIsLogined] = useState(false);
-  const [accessToken, setaccessToken] = useState("");
+
 useEffect(()=>{
   window.gapi.load("client:auth2" , ()=>{
     return window.gapi.client.init({
@@ -37,15 +33,9 @@ useEffect(()=>{
 
 const onAuthChange = (isSignedIn) =>{ 
   if (isSignedIn) {
-       console.log(isSignedIn);
-       localStorage.setItem('useralreadlogin',true);         
-       props.SignIn('google')
-
      return setIsLogined(true)
       
   }
-  localStorage.removeItem('useralreadlogin');         
-
      return setIsLogined(false)
 }
 
@@ -57,33 +47,35 @@ const RenderAuthButton=()=>{
       </div>)    
   }
   else if (isLogined) {
-      return <Button variant="contained" color="primary" onClick={HendaleSignOutClick} >
-         Logout 
+      return <Button variant="contained"fullWidth color="secondary" onClick={HendaleSignOutClick} >
+        <img src='../../.././iconfinder_google-plus_1279046.png' height='25px'/>
           </Button >
       
   }
-      return(<Button variant="contained"  onClick={HendaleSignInClick} >
-    Login
+      return(<div style={{marginBottom:'10px'}}>
+          <Button  variant="contained" color="secondary"  fullWidth onClick={HendaleSignInClick} >
+        <img src='../../.././iconfinder_google-plus_1279046.png' height='25px'/>
+    
       </Button >
+      </div>
+      
+    
+      
+     
   )
   
   }
 
 
  const HendaleSignInClick = () =>{      
-        
-    // console.log(window.gapi.auth2.getAuthInstance().currentUser.get().getId(), "User id ");
     let auth = window.gapi.auth2.getAuthInstance();
- auth.signIn()
-
+ auth.signIn();
 
 }
 
 const HendaleSignOutClick = () =>{
   let auth = window.gapi.auth2.getAuthInstance();
-
     auth.signOut();
-    props.SignOut()
 
 }
 return(
@@ -96,4 +88,4 @@ return(
 // console.log(state);
 //   // return{}
 // }
-export default connect()(LoginWithGoogleCopy)
+export default connect()(LoginWithGoogle)

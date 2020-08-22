@@ -1,5 +1,6 @@
 
-
+body {
+  }
 .home-page{
     height: 90.9vh;
     width: 100vw;
@@ -7,11 +8,13 @@
     background-image:linear-gradient(rgba(0, 0, 0, 0.781),rgba(0, 0, 0, 0.5)), url(https://cdn.pixabay.com/photo/2016/01/19/17/57/car-1149997_960_720.jpg);
     background-size: cover;
     background-position: center;
+   
+
 }
 
 
 .home-page-Ditailes{
-
+  
     display: flex;
     width: 100%;
     height: 50%;

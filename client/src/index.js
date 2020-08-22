@@ -1,3 +1,6 @@
+
+import { ThemeProvider } from '@material-ui/styles';
+import { createMuiTheme } from '@material-ui/core/styles';
 import React from 'react';
 import ReactDOM from 'react-dom';
 // import './app.css'
@@ -6,14 +9,25 @@ import {Provider} from 'react-redux';
 import {createStore , applyMiddleware , compose} from 'redux';
 import reducers from './Reducers/index'
 import reduxThunk from 'redux-thunk'
-
-
 import * as serviceWorker from './serviceWorker';
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 const store = createStore(reducers , composeEnhancers(applyMiddleware(reduxThunk)))
+
+const theme = createMuiTheme({
+  palette: {
+    primary: {
+      main: '#4267B2',
+    },
+    secondary: {
+      main: '#DB4437',
+    },
+  },
+});
 ReactDOM.render(
   <Provider store={store}>
+     <ThemeProvider theme={theme}> 
   <App />
+  </ThemeProvider>
 </Provider>,
   document.getElementById('root')
 );

@@ -24,7 +24,7 @@ app.post("/userRegister", (req, res) => {
 
 app.post("/userLogin",(req, res) => {
   userLoginModule.userLogin(req,res)
-});
+});  
 
 app.post("/userLoginAuth",(req, res) => {
   userLoginAuthModule.userLoginWithAuth(req,res)

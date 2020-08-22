@@ -5,7 +5,7 @@ const bcrypt = require("bcrypt");
 
 const userRegister =  (req, res) => {
   const { email } = req.body.userRegisterForm;
- 
+ console.log(1235688);
   MongoClient.connect(url, function(err, db) {
     const dbo = db.db("car-catalog");
     dbo
@@ -25,7 +25,7 @@ const userRegister =  (req, res) => {
 
 
 
-
+ 
 const insertUsersToDB=  async(req,res)=> {
   const { email } = req.body.userRegisterForm;
   const { password } = req.body.userRegisterForm;
@@ -46,8 +46,6 @@ const insertUsersToDB=  async(req,res)=> {
           password: hash,
           firstName,
           lastName,
-          last_name,
-          first_name,
           userSignInRegular:req.body.userSignInRegular
         };
         dbo

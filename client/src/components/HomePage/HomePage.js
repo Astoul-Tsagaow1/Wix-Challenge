@@ -9,9 +9,9 @@ export default function HomePage() {
     return ( <div className="home-page" >
         <div className="home-page-Ditailes">
              <Box  >
-         <h1>Welcome As cars catalog, please..</h1>
-                <Link to="/register"> Register </Link>||
-                <Link to="/login"> Login </Link>
+         <h1>Welcome to Ascars catalog, please..</h1>
+                <Link to="/Ascars-catalog/register"> Register </Link>||
+                <Link to="/Ascars-catalog/login"> Login </Link>
               </Box>
         </div>
         

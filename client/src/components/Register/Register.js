@@ -1,11 +1,11 @@
 import React from 'react'
 // import {useForm} from 'react-hook-form'
 
-import SignIn from '../RegisterUser/SignIn'
+import SignUp from '../SignUp/SignUp'
 export default function Register() {
     return (
         <div>
-       <SignIn/>
+       <SignUp/>
         </div>
     )
 }

@@ -4,8 +4,6 @@ import Box from "@material-ui/core/Box";
 import { motion } from "framer-motion";
 import history from "../../history";
 import Button from "@material-ui/core/Button";
-import LogInWithFaceBook from "../RegisterWithFaceBook/LogInWithFaceBook";
-import LoginWithGoogleCopy from "../RegisterWithGoogle/LoginWithGoogleCopy";
 import "./AppBar.css";
 import { Link } from "react-router-dom";
 import {connect} from 'react-redux'

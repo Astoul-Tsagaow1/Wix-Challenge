@@ -1,3 +1,4 @@
+
 import React,{useState , useEffect} from "react";
 import GetCarListAndDisplay from "./components/GetCarListAndDisplay/GetCarListAndDisplay";
 import './App.css'
@@ -12,16 +13,15 @@ import HomePage from "./components/HomePage/HomePage";
 function App() {
   return (
     <Router history={history}>
-    <div className="App">
+     <div className="App">
        <AppBar/>
       <Route path="/" exact component={HomePage}></Route>
-
-      <Route path="/cars-list" exact component={GetCarListAndDisplay}></Route>
-
-      <Route path="/register" exact component={Register}></Route>
-      <Route path="/login" exact component={Login}></Route>
+      <Route path="/Ascars-catalog/cars-list" exact component={GetCarListAndDisplay}></Route>
+      <Route path="/Ascars-catalog/register" exact component={Register}></Route>
+      <Route path="/Ascars-catalog/login" exact component={Login}></Route>
 
     </div>
+   
     </Router>
   );
 }

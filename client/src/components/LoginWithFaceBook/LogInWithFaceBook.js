@@ -1,11 +1,10 @@
 
 import FacebookIcon from '@material-ui/icons/Facebook';
-
 import React, { useEffect, useState } from "react";
 import Button from "@material-ui/core/Button";
-
 import axios from 'axios'
 let APP_ID = "592319644737485";
+
 const timeLogiin = ()=>{
 let currentdate = new Date(); 
 let datetime = "login Time : " + currentdate.getDate() + "/"
@@ -95,16 +94,17 @@ export default function LogInWithFaceBook() {
 
   if (isLogin) {
     return (
-        <Button variant="contained" color="primary" onClick={handleFBLogout}>
-          LogOut <FacebookIcon />
+        <Button variant="contained" fullWidth color="primary" onClick={handleFBLogout}>
+           <FacebookIcon />
          
         </Button>
     );
   }
   return (
-      <Button variant="contained" color="primary" onClick={handleFBLogin}>
-     Login  <FacebookIcon />
+  <Button variant="contained" color="primary"  fullWidth onClick={handleFBLogin}>
+       <FacebookIcon />
         
       </Button>
+    
   );
 }
