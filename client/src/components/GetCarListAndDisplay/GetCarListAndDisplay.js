@@ -9,24 +9,24 @@ import MenuItem from "@material-ui/core/MenuItem";
 import Select from "@material-ui/core/Select";
 import { Typography } from "@material-ui/core";
 import CircularProgress from '@material-ui/core/CircularProgress';
+import LoginWithGoogle from "../LoginWithGoogle/LoginWithGoogle";
+import FacebookIcon from '@material-ui/icons/Facebook';
+import Button from "@material-ui/core/Button";
+import history from '../../history'
 
 const Styles = makeStyles(theme => ({
   formControl: {
     margin: theme.spacing(2),
     minWidth: 300,
-    minHeight: 100
+    minHeight: 100,
+
+    
   },
-  root: {
-    display: 'flex',
-    justifyContent:'center',
-    alignItems:'ceter'
-   
-  }
 }));
 function GetCarListAndDisplay() {
   const [cars, setCars] = useState([]);
   const [carsSelectOptions, setCarsSelectOptions] = useState([]);
-  // const [arrayAfterFilterHolder, setArrayAfterFilterHolder] = useState(null);
+  const [arrayAfterFilterHolder, setArrayAfterFilterHolder] = useState(null);
   const [carsListAfterFilter, setCarsListAfterFilter] = useState(null);
 
   const classes = Styles();
@@ -53,10 +53,51 @@ function GetCarListAndDisplay() {
       </div>
     );
   }
+
+
+  const IsSignIn =()=>{
+
+   if (localStorage.getItem('facebookLogin') === 'true') {
+     return(
+<Button variant="contained" fullWidth color="primary" onClick={()=>{
+         localStorage.clear('facebookLogin')
+         history.push('/')
+
+       }}>
+       Logout    <FacebookIcon />
+         
+        </Button> 
+
+     )
+ }
+     else if (localStorage.getItem('regularLogin') === 'true') {
+       return (
+        <Button
+        type="submit"
+        fullWidth
+        variant="contained"
+        className={classes.submit}
+        onClick={()=>{
+          localStorage.clear('regularLogin')
+          history.push('/')
+ 
+        }}
+      >
+       Logout
+      </Button>
+       )
+     }
+return <LoginWithGoogle/>
+
+     
+  
+
+
+  }
   const filterByCarsNamesChange = event => {
     if (event.target.value === "All") {
       setCarsListAfterFilter(null);
-      // setArrayAfterFilterHolder(null);
+      setArrayAfterFilterHolder(null);
       return;
     }
 
@@ -67,19 +108,19 @@ function GetCarListAndDisplay() {
     });
     setCarsListAfterFilter(afterfilter);
 
-    // setArrayAfterFilterHolder(afterfilter);
+    setArrayAfterFilterHolder(afterfilter);
     return;
   };
 
   const handleYearChange = event => {
-    if (carsListAfterFilter === null) {
+    if (arrayAfterFilterHolder === null) {
       const afterYearFilter = cars.filter(carsYear => {
       return Number(carsYear.year) === Number(event.target.value) 
       });
       setCarsListAfterFilter(afterYearFilter);
       return;
     }
-    const afterFilter = carsListAfterFilter.filter(data => {
+    const afterFilter = arrayAfterFilterHolder.filter(data => {
     return Number(data.year) === Number(event.target.value) 
     });
 console.log( afterFilter,"after year filter");
@@ -96,6 +137,9 @@ console.log( afterFilter,"after year filter");
     <div style={{ textAlign: "center" }}>
       <Typography variant="h4">Search by :</Typography>
       <FormControl className={classes.formControl}>
+        <div className="form">
+          
+        </div>
         <InputLabel id="demo-simple-select-label">car Names</InputLabel>
         <Select
           labelId="demo-simple-select-label"
@@ -113,7 +157,19 @@ console.log( afterFilter,"after year filter");
           type="number"
           onChange={handleYearChange}
           label="Year"
-        />
+        /> 
+      </FormControl>
+      <FormControl className={classes.formControl}>
+
+      {/* {localStorage.getItem('facebookLogin') === 'true' ?  <Button variant="contained" fullWidth color="primary" onClick={()=>{
+         localStorage.clear('facebookLogin')
+         history.push('/')
+
+       }}>
+       Logout    <FacebookIcon />
+         
+        </Button>:<LoginWithGoogle/> }  */}
+        {IsSignIn()}
       </FormControl>
 
       <DisplayCarList ListOfCars={carsListAfterFilter || cars} />

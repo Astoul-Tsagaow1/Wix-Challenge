@@ -1,10 +1,9 @@
-
+import history from '../../history'
 import FacebookIcon from '@material-ui/icons/Facebook';
 import React, { useEffect, useState } from "react";
 import Button from "@material-ui/core/Button";
 import axios from 'axios'
 let APP_ID = "592319644737485";
-
 const timeLogiin = ()=>{
 let currentdate = new Date(); 
 let datetime = "login Time : " + currentdate.getDate() + "/"
@@ -21,8 +20,8 @@ export default function LogInWithFaceBook() {
   const [isLogin, setIsLogIn] = useState(false);
   useEffect(() => {
     loadFbLoginApi();
-
-  });
+    // handleFBLogin();
+  },);
   const loadFbLoginApi = () => {
     window.fbAsyncInit = function () {
       window.FB.init({
@@ -32,8 +31,6 @@ export default function LogInWithFaceBook() {
         version: "v8.0",
       });
     };
-
-
     (function (d, s, id) {
       var js,
         fjs = d.getElementsByTagName(s)[0];
@@ -43,6 +40,8 @@ export default function LogInWithFaceBook() {
       js.src = "//connect.facebook.net/en_US/sdk.js";
       fjs.parentNode.insertBefore(js, fjs);
     })(document, "script", "facebook-jssdk");
+
+
   };
 
   const statusChangeCallback = (response) => {
@@ -69,7 +68,11 @@ export default function LogInWithFaceBook() {
             .then(res=>{
 
               if (res.status ===200) {
-                setIsLogIn(true)
+                // setIsLogIn(true)
+                localStorage.setItem('facebookLogin',true)
+
+          history.push('/Ascars-catalog/cars-list')
+
               }
               }
             )
@@ -87,7 +90,7 @@ export default function LogInWithFaceBook() {
     window.FB.logout((response) => {
       statusChangeCallback(response);
       setIsLogIn(false);
-      localStorage.removeItem('userlogin');         
+      history.push('/')
 
     });
   };
@@ -95,7 +98,7 @@ export default function LogInWithFaceBook() {
   if (isLogin) {
     return (
         <Button variant="contained" fullWidth color="primary" onClick={handleFBLogout}>
-           <FacebookIcon />
+       Logout    <FacebookIcon />
          
         </Button>
     );

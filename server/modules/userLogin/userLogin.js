@@ -32,13 +32,13 @@ const userLogin = async(req,res)=>{
              }
 
              
-             return res.status(404).send(result);
+             return res.status(205).send(result);
 
 
              });
          }  
          catch {
-          return res.status(404).send(result);
+          return res.status(205).send(result);
          }
         //  console.log(result, "the person that login");
          db.close();

@@ -11,6 +11,8 @@ import { makeStyles } from "@material-ui/core/styles";
 import Container from "@material-ui/core/Container";
 import LoginWithGoogle from '../LoginWithGoogle/LoginWithGoogle';
 import LoginWithFaceBook from '../LoginWithFaceBook/LogInWithFaceBook'
+import { Alert, AlertTitle } from '@material-ui/lab';
+import { Link } from "react-router-dom";
 
 const useStyles = makeStyles((theme) => ({
     paper: {
@@ -35,19 +37,29 @@ const useStyles = makeStyles((theme) => ({
 export default function Login() {
 
     const {register ,handleSubmit} = useForm();
-    const {isUserSignIn ,setIsUserSignIn} = useState(null);
-
+    const [somethinWrong ,setSomethinWrong] = useState(false);
     const HandelSubmitSignInForm = (data)=>{
         console.log(data);
         axios.post("/userLogin",{userLoginForm:data })
         .then(res=>{
-        console.log(res.status);
 
-        if (res.status === 201||200) {
-          setIsUserSignIn(true)
-          history.push('/carcatalog')
+          if (res.status === 201) {
+            localStorage.setItem('regularLogin',true)
+          history.push('/Ascars-catalog/cars-list')
+            
+          }
+
+        if (res.status === 205) {
           
+          setSomethinWrong(true)
+          console.log(somethinWrong);
+          return
         }
+
+
+    
+
+        return 
         
         })
         
@@ -100,18 +112,24 @@ export default function Login() {
           </Button>
      <LoginWithGoogle/>
        <LoginWithFaceBook/>
+
+          
+       <Grid container justify="flex-end">
+            <Grid item>
+              <Link to="/Ascars-catalog/register" variant="body2">
+              You don't have an account ? Register .
+                 </Link>
+            </Grid>
+          </Grid>
+       {somethinWrong ?  <Alert onClose={() => {setSomethinWrong(false) ;}} severity="error">
+        <AlertTitle>Error</AlertTitle>
+        something wrong <strong>check Your Password and Email !</strong>
+      </Alert>:""}
+
+
         </form>
       </div>
       </Container>
     )
 }
 
-
-// const Login = ()=>{
-
-//     axios.post('/userlogin',{  email : "astu053@gmail.com", password :'147' }).then(res=>{
-   
-//            console.log(res.data);
-//          })
-       
-//      }

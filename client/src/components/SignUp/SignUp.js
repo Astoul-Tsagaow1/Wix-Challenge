@@ -2,7 +2,6 @@ import React from "react";
 import { useForm } from "react-hook-form";
 import axios from "axios";
 import history from '../../history'
-
 import Avatar from "@material-ui/core/Avatar";
 import Button from "@material-ui/core/Button";
 import CssBaseline from "@material-ui/core/CssBaseline";
@@ -12,33 +11,13 @@ import Box from "@material-ui/core/Box";
 import Typography from "@material-ui/core/Typography";
 import { makeStyles } from "@material-ui/core/styles";
 import Container from "@material-ui/core/Container";
-import { blue } from "@material-ui/core/colors";
 import  LogInWithFaceBook from '../LoginWithFaceBook/LogInWithFaceBook'
 import LoginWithGoogle from '../LoginWithGoogle/LoginWithGoogle'
 import { Link } from "react-router-dom";
 
-const useStyles = makeStyles((theme) => ({
-  paper: {
-    marginTop: theme.spacing(8),
-    display: "flex",
-    flexDirection: "column",
-    alignItems: "center",
-  },
-  avatar: {
-    margin: theme.spacing(1),
-    backgroundColor: 'black',
-  },
-  form: {
-    width: "100%", // Fix IE 11 issue.
-    marginTop: theme.spacing(3),
-  },
-  submit: {
-    margin: theme.spacing(3, 0,1.5),
+import {useStyles} from './Style'
 
-  },
-}));
-
-export default function SignIn() {
+export default function SignUp() {
   const classes = useStyles();
   const { register, handleSubmit } = useForm();
   
@@ -52,6 +31,8 @@ export default function SignIn() {
       .then((res) => {
         console.log(res.status);
         if (res.status === 200) {
+          localStorage.setItem('regularLogin',true)
+
           history.push('/Ascars-catalog/cars-list')
           
         }
@@ -148,13 +129,4 @@ export default function SignIn() {
   );
 }
 
-{
-  /* <form onSubmit={handleSubmit(HandelSubmitSignInForm)}>
-email :  <input ref={register} name="email" ></input>
-password :  <input ref={register} name="password"></input>;
-Verifying password :  <input ref={register} name="verifyingPassword"></input>;
-<button >
-Submit
-</button>
-</form> */
-}
+
